@@ -1,39 +1,70 @@
-.inline-block{
-    display: inline-block;
-    vertical-align: center;
+/* Main Style */
+body{
+    padding: 10px;
 }
 
+/* Navigation */
+
+.header{
+    gap: 20px;
+}
+.navigation{
+    display: grid;
+    background-color: aquamarine;
+    grid-template-columns: 50% 50%;
+    height: 50px;
+    
+    }
+    
 .logo{
-    width: 23%;
-    padding: 1%;
-text-align: center;
+    height: 100px;
+    position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myName{
+    padding: 20px;
+    position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myTitle{
+    padding: 20px;
+    position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navTop{
-    width: 73%;
-    padding: 1%;
-}
-.ul{
-    width: 50%;
-    margin-left: auto;
-}
-.heroImg{
-    height: 600px;
-    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 24px;
+    padding: 20px;
 }
 
-.content{
-    width: 500px;
-    margin: 0 auto;
+
+/* Footer */
+.bottomLine{
+    height: 5px;
+    background-color: aquamarine;
 }
-.footerNav{
-    background-color: #373738;
-    padding: center;
+
+
+
+
+/* Home Content */
+.contentHome{
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
-.ul footer{
-    display: inline-block;
-    vertical-align: top; 
-    color: aliceblue;
-}
-.footerNav .navBottom{
-    text-align: center;
-}
+
+
+/* About Content */
+
+/* Skills Content */
+
+/* Work Content */
