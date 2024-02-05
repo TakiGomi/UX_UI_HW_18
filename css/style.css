@@ -4,6 +4,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* Navigation */
 
 .header{
@@ -18,22 +19,18 @@ body{
     }
     
 .logo{
-    height: 100px;
-    position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0px 30px 0px;
 }
 .myName{
-    padding: 20px;
-    position: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .myTitle{
-    padding: 20px;
-    position: center;
+    padding: 0px 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,9 +40,18 @@ body{
     justify-content: space-evenly;
     align-items: center;
     font-size: 24px;
-    padding: 20px;
 }
 
+/* Content */
+.contentHeader{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+.headerLine{
+    height: 5px;
+    background-color: aquamarine;
+}
 
 /* Footer */
 .bottomLine{
@@ -65,6 +71,12 @@ body{
 
 
 /* About Content */
+.aboutMe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
 
 /* Skills Content */
 
@@ -73,10 +85,5 @@ body{
 /* Responsive Web Design */
 
 @media only screen and (max-width: 1000px) {
-    #navigation {
-      display: none;
-    }
-    .icons {
-      margin-left: auto;
-    }
+
   }
