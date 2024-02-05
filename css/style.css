@@ -1,6 +1,7 @@
 /* Main Style */
 body{
     padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navigation */
@@ -68,3 +69,14 @@ body{
 /* Skills Content */
 
 /* Work Content */
+
+/* Responsive Web Design */
+
+@media only screen and (max-width: 1000px) {
+    #navigation {
+      display: none;
+    }
+    .icons {
+      margin-left: auto;
+    }
+  }
