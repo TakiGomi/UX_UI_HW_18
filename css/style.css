@@ -1,6 +1,6 @@
 .inline-block{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: center;
 }
 
 .logo{
@@ -8,7 +8,7 @@
     padding: 1%;
 text-align: center;
 }
-.nav{
+.navTop{
     width: 73%;
     padding: 1%;
 }
@@ -25,14 +25,15 @@ text-align: center;
     width: 500px;
     margin: 0 auto;
 }
-.footer{
+.footerNav{
     background-color: #373738;
     padding: center;
 }
 .ul footer{
     display: inline-block;
     vertical-align: top; 
+    color: aliceblue;
 }
-.li ul footer{
+.footerNav .navBottom{
     text-align: center;
 }
