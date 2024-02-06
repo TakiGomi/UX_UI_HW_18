@@ -1,7 +1,7 @@
 /* Main Style */
 body{
     padding: 10px;
-    font-family: 'Poppins', sans-serif;
+    
 }
 
 
@@ -12,7 +12,7 @@ body{
 }
 .navigation{
     display: grid;
-    background-color: aquamarine;
+    background-color: #C3F5E4;
     grid-template-columns: 50% 50%;
     height: 50px;
     
@@ -22,25 +22,49 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px 30px 0px;
 }
 .myName{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+
 }
 .myTitle{
     padding: 0px 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    font-family: "Roboto Serif", serif;
 }
-.navTop{
+.navTop {
+    text-decoration: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 24px;
+
+   
 }
+.navTop a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
+}
+.icons {
+   min-height: fit-content;
+   display: flex;
+   justify-content:right;
+   align-items: center;
+   padding-right: 30px;
+}
+
+
 
 /* Content */
 .contentHeader{
@@ -49,14 +73,14 @@ body{
     font-size: 36px;
 }
 .headerLine{
-    height: 5px;
+    height: 20px;
     background-color: aquamarine;
 }
 
 /* Footer */
 .bottomLine{
     height: 5px;
-    background-color: aquamarine;
+    background-color: #C3F5E4;
 }
 
 
