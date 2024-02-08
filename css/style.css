@@ -4,6 +4,7 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: light;
+
 }
 
 
@@ -70,7 +71,12 @@ body{
 margin: 1px;
 scale: 75%;
 }
-.resume {
+
+button{
+    outline: none;
+    box-shadow: none;
+}
+ .resume {
     background-color: #C3F5E4;
     font-size: 16px;
     font-family: "Roboto Serif", serif;
@@ -90,16 +96,7 @@ scale: 75%;
     margin: 50px 0px 20px 0px;
   
 }
-.headerLine{
-    height: 1px;
-    background-color: black;
-    margin-bottom: 50px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 
 /* Footer */
 .bottomLine{
@@ -107,7 +104,7 @@ scale: 75%;
     background-color: #C3F5E4;
 }
 .copyRight{
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
     justify-content:right;
     align-items: center;
@@ -121,26 +118,139 @@ scale: 75%;
 
 /* Home Content */
 .contentHome{
-    padding: 20px 0px;
+    width: 85%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 40px;
 }
 
 
 /* About Content */
 .aboutMe{
+    width: 85%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+    grid-gap: 30px;
 }
 
 
 /* Skills Content */
+h3{
+    font-size: 20px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
+}
+.cardContainer{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 40px;
+}
+.card{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.card img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+.cardContent{
+    padding: 20px;
+}   
+
+.cardContent h3 {
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.cardContent p {
+    color: #222;
+    line-height: 1.5;
+}
 
 /* Work Content */
+.cardContainer-work{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 40px;
+}
+.cardWorks{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.cardWorks img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+.cardContent-work{
+    padding: 20px;
+}   
 
+.cardContent h3 {
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.cardContent p {
+    color: #222;
+    line-height: 1.5;
+}
+.moreDetails {
+    background-color: #C3F5E4;
+    font-size: 14px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
+    outline:#C3F5E4;
+    width: 150px;
+}
+.viewMore p {
+    font-size: x-large;
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
+    color: #222;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    outline: none;
+}
 /* Responsive Web Design */
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 800px){
+    .cardContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .cardContainer{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 600px){
+    .cardWorks{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 600px){
+    .contentHome .aboutMe{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 600px){
+    .aboutMe{
+        grid-template-columns: 1fr;
+    }
 
-  }
+  
